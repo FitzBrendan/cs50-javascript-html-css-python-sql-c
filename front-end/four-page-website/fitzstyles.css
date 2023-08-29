@@ -1,0 +1,228 @@
+.fitzgoldFont {
+    color: #FFFF74;
+}
+
+.fitzgoldBG {
+    backdground-color: #FFFF74;
+}
+
+.fitzbrownBG {
+     background-color: #6D4700;
+}
+
+.fitzgreenBG {
+    background-color: #197E76
+}
+
+.margin20 {
+    margin: 20px 0;
+}
+
+.padding100 {
+    padding: 20px 20px 0 20px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1.banner {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.75;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #FFFF74;
+    color: #197E76 !important;
+}
+
+.a-active {
+    background-color: #FFFF74;
+    color: #197E76 !important;
+}
+
+/* remove bullets in nav bar list */
+li.navbar-nav  {
+    list-style-type: none;
+}
+
+.square-logo-nav {
+    margin-left: 25px;
+}
+
+/* footer */
+.square-logo-footer {
+    margin-top: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    column-gap: 300px;
+}
+
+.footer-logo a:hover {
+    background-color: #6D4700 !important;
+}
+
+.footer-nav-copyrights {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.footer-contact-terms {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Main section divs */
+.main-top {
+    background-image: url("/dark-lap-desk-sw-code-10-rs.jpg");
+    background-color: black;
+    height: 500px;
+    width: 100vw;
+    background-size: 100vw;
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-top-services {
+    background-image: url("/hands-screen-10-rs.jpg");
+    background-color: black;
+    opacity: 0.7;
+    height: 500px;
+    width: 100vw;
+    background-size: 100vw;
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.main-top-about {
+    background-image: url("/outstreched-arms-10-rs.jpg");
+    background-color: black;
+    opacity: 0.7;
+    height: 500px;
+    width: 100vw;
+    background-size: 100vw;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px 0;
+}
+
+.main-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.main-mid-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    }
+
+.main-mid-image {
+    height: 300px;
+    width: 300px;
+}
+
+.main-mid-image-about {
+    height: 400px;
+    width: 400px;
+    padding: 55px;
+}
+
+.main-mid-right-align {
+    margin-right: 100px;
+    align-items: right;
+}
+.main-mid-p-padding {
+    padding: 20px 0;
+}
+
+.main-mid-contact {
+    height: 700px;
+    width: 100vw;
+    background-size: 100vw;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+ /* Popup container */
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 750px;
+    background-color: #f3f6f4;
+    color: #2c2c2c;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    right: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
