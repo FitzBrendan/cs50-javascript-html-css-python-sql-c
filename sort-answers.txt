@@ -1,0 +1,11 @@
+sort1 uses: Bubble
+
+How do you know?: random50000.txt magnitudes slower than sorted50000.txt, n vs n sqaured
+
+sort2 uses: Merge
+
+How do you know?: similar good results for random and sorted, n log n for random and sorted
+
+sort3 uses: Selection
+
+How do you know?: simular long times for random and sorted, n squared for random and sorted
