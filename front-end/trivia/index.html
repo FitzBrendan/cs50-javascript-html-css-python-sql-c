@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+
+// When click  on correct answer button, set the green color
+let correctColor = document.querySelector('.correct-color');
+correctColor.addEventListener('click', function() {
+    correctColor.style.backgroundColor = 'green';
+    document.querySelector('#feedback-color').innerHTML = 'Correct!';
+    });
+
+// When click  on incorrect answer button, set the red color
+let incorrects = document.querySelectorAll('.incorrect-color');
+for(let i = 0; i < incorrects.length; i++)
+{
+    incorrects[i].addEventListener('click', function() {
+    incorrects[i].style.backgroundColor = 'red';
+    document.querySelector('#feedback-color').innerHTML = 'Incorrect';
+    });
+}
+
+document.querySelector('#check').addEventListener('click', function(){
+   let input = document.querySelector('input');
+   if(input.value == '10'){
+       input.style.backgroundColor = 'green';
+       document.querySelector('#feedback2').innerHTML = 'Correct!';
+   } else {
+       input.style.backgroundColor = 'red';
+       document.querySelector('#feedback2').innerHTML = 'Incorrect';
+   }
+});
+
+});
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <!-- TODO: Add multiple choice question here -->
+            <h3>What colors are best for web page buttons to get the most clicks?</h3>
+            <button class="correct-color red button">Warm Colors, like Red</button>
+            <button class="incorrect-color green button">Cool Colors, like Green</button>
+            <button class="incorrect-color gray button">Neutral Colors, like Gray</button>
+
+            <p id="feedback-color"></p>
+
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <!-- TODO: Add free response question here -->
+            <h3>What is the minimum size for usable website buttons? (mm)</h3>
+            <input type="text" />
+            <button id="check">Check Answer</button>
+
+            <p id="feedback2"></p>
+
+        </div>
+    </div>
+</body>
+
+</html>
